@@ -1,0 +1,12 @@
+server:
+  port: 6001
+eureka:
+  instance:
+    hostname: eureka_server_01
+  client:
+    register-with-eureka: false #是否可注册服务
+    fetch-registry: false #是否可发现服务
+    service-url:
+      defaultZone: http://localhost:6002/eureka/
+  server:
+    enable-self-preservation: false #开发环境关闭eureka的自我保护机制

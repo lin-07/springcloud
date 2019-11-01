@@ -1,0 +1,15 @@
+server:
+  port: 80
+spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+  application:
+    name: consumer
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:6001/eureka/,http://localhost:6002/eureka/
